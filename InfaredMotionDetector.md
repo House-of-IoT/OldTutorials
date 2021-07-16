@@ -1,5 +1,5 @@
 # Infared motion detector
-
+ Simple smart device that senses body heat movement and sends alert to the GeneralSever.
 # General
 This device aims to send alerts whenever it senses body heat from an unknown source. This device can be placed anywhere with the proper insulation/setup.
 This device uses Passive Infared Sensors(PIR sensors) as the primary sensing functionality, this project could be combined with many other features to create
