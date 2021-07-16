@@ -8,6 +8,9 @@ awesome devices.
 ## Hardware
 
 1.You will need 1xRaspberry Pi 4.
+
 2.You will need 2xPIR Sensors.
+
 3.You will need Female to Female dupont jumper wires.
 
+## Software
