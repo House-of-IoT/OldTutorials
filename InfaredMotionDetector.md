@@ -7,7 +7,7 @@ awesome devices.
 
 ## Hardware
 
-1.You will need 1xRaspberry Pi 4.
+1.You will need 1xRaspberry Pi zero wh/3/4.
 
 2.You will need 2xPIR Sensors.
 
