@@ -40,6 +40,40 @@ You need to setup one ExternalController and one GeneralServer for the heart of 
 ## Actual step by step to get the server running locally.
 1. Clone the repo(`git clone https://github.com/House-of-IoT/HOI-GeneralServer`) and Clone the repo(`https://github.com/House-of-IoT/HOI.py`)
 2. setup your config and env variables(explained above)
-3. Make sure you have python installed 
-4. Install HOI.py in the runtime by going into `HOI.py` and running `python install setup.py`
-5. Start the server! `python main.py`
+3. Make sure you have python installed https://www.python.org/ .
+4. Install HOI.py in the runtime by going into `HOI.py` and running `python setup.py install`
+5. Start the server! `python main.py`/`python3 main.py`
+
+
+# Running the ExternalController
+
+## Env variables needed to be set
+```
+1. The regular password to connect to the general server("hoi_mdc_pw")
+NOTE:this password should be the same as the password above for the general server("rpw_hoi_gs")
+NOTE:this password is needed only to read the passive data and execute relations
+
+2. The admin password to connect to the general server("hoi_exc_a_pw")
+NOTE:this password should be the same as the password above for the general server("apw_hoi_gs")
+NOTE:this password is used to authenticate as an admin if the server requires admin auth for action execution.
+
+3. The password to connect to the external controller("hoi_exc_s_pw")
+```
+
+## config.json
+This file is for connecting to the GeneralServer.
+
+```
+{"host": "localhost", -> Host
+"port": 50888,  -> Port
+"name": "ExternalController", -> The name that your external controller will use to connect to the general server. Should never change(unless you know what you are doing). 
+"type": "non-bot"} -> The type that your external controller will use to connect to the general server. Should never change.
+```
+
+## server_config.json
+This file holds hosting information for the external controller to accept connections.
+```
+{
+"host": "127.0.0.1", -> Host
+"port": 50224} -> Port
+```
