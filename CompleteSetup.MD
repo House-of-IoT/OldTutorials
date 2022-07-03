@@ -42,7 +42,8 @@ You need to setup one ExternalController and one GeneralServer for the heart of 
 2. setup your config and env variables(explained above)
 3. Make sure you have python installed https://www.python.org/ .
 4. Install HOI.py in the runtime by going into `HOI.py` and running `python setup.py install`
-5. Start the server! `python main.py`/`python3 main.py`
+5. Make sure you install the requirements.txt file using python.
+6. Start the server! `python main.py`/`python3 main.py`
 
 
 # Running the ExternalController
@@ -77,3 +78,17 @@ This file holds hosting information for the external controller to accept connec
 "host": "127.0.0.1", -> Host
 "port": 50224} -> Port
 ```
+
+## Actual step by step to get the server running locally.
+1. Clone the repo(`git clone https://github.com/House-of-IoT/ExternalController`) 
+2. Setup the config files mentioned above
+3. Make sure you have python installed https://www.python.org/.
+4. Make sure you install the requirements.txt file using python.
+5. run `python main.py`/`python3 main.py`
+
+
+
+
+Now you should have both of these components running, now please check the complete setup for the collaborative portion of the system to setup the web
+interface/clubhouse esque features.
+https://github.com/Collaborative-IoT/Docs/blob/main/CompleteSetup.MD.
